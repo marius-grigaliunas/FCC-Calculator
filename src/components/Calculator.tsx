@@ -41,15 +41,15 @@ export const Calculator : React.FC = () => {
                 <button id="subtract" className="bg-gray-500 text-white p-4 flex justify-center items-center">-</button>
             
             
-                <button id="four" className="bg-gray-600 text-white p-4 flex justify-center items-center">4</button>
-                <button id="five" className="bg-gray-600 text-white p-4 flex justify-center items-center">5</button>
-                <button id="six" className="bg-gray-600 text-white p-4 flex justify-center items-center">6</button>
+                <button id="four" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("4")} >4</button>
+                <button id="five" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("5")} >5</button>
+                <button id="six" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("6")} >6</button>
                 <button id="add" className="bg-gray-500 text-white p-4 flex justify-center items-center">+</button>
 
                 
-                <button id="one" className="bg-gray-600 text-white p-4 flex justify-center items-center">1</button>
-                <button id="two" className="bg-gray-600 text-white p-4 flex justify-center items-center">2</button>
-                <button id="three" className="bg-gray-600 text-white p-4 flex justify-center items-center">3</button>
+                <button id="one" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("1")} >1</button>
+                <button id="two" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("2")} >2</button>
+                <button id="three" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("3")} >3</button>
                 <button id="equals" className="bg-blue-800 text-white row-span-2 p-4 flex justify-center items-center">=</button>
 
                 <button id="zero" className="bg-gray-600 text-white col-span-2 p-4 flex justify-center items-center">0</button>
