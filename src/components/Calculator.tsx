@@ -22,6 +22,11 @@ export const Calculator : React.FC = () => {
         }
     }
 
+    const enterSymbol = (symbol: string) => {
+        setPressedButton(symbol)
+        setExpression(expression + symbol)
+    }
+
 
     return (
         <div id="calculator" className="border h-100 w-80 flex flex-col p-2 bg-gray-700">
@@ -44,7 +49,7 @@ export const Calculator : React.FC = () => {
                 <button id="four" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("4")} >4</button>
                 <button id="five" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("5")} >5</button>
                 <button id="six" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("6")} >6</button>
-                <button id="add" className="bg-gray-500 text-white p-4 flex justify-center items-center">+</button>
+                <button id="add" className="bg-gray-500 text-white p-4 flex justify-center items-center" onClick={() => enterSymbol("+")} >+</button>
 
                 
                 <button id="one" className="bg-gray-600 text-white p-4 flex justify-center items-center" onClick={() => enterNumbers("1")} >1</button>
